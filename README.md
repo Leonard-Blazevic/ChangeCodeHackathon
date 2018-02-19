@@ -5,7 +5,8 @@ Pokretanje (Program se temelji na Node.js-u):
 1)U root folderu projekta pokrenuti:
 	1)npm-install 
 	2)npm-install gulp -g
-	3)gulp
+	3)gulp scripts
+	4)gulp
 
 2)Aplikacija se vrti na portu 4000
 3)/registration => prvi zadatak
