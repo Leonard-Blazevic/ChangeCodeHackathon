@@ -1,0 +1,40 @@
+<html ng-app="myApp">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/infoController.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body ng-controller="infoController as vm">
+    <div class="row">
+        <label class="info-title">{{vm.data.TeamName}}</label>
+    </div>
+    <div ng-repeat="row in [0,1]" class="row">
+        <div ng-repeat="member in [0,1]" class="col-sm-6">
+            <div class="card info-card">
+                <div class="card-body">
+                    <div class="flex">
+                        <p class="card-text">Name:</p>
+                        <h5 class="card-title">{{vm.data.Members[member+(2*row)].Name}}</h5>
+                    </div>
+                    <div class="flex">
+                        <p class="card-text">Surname:</p>
+                        <h5 class="card-title">{{vm.data.Members[member+(2*row)].Surname}}</h5>
+                    </div>
+                    <div class="flex">
+                        <p class="card-text">Email:</p>
+                        <h5 class="card-title">{{vm.data.Members[member+(2*row)].Mail}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.registration-form{
+    width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+.top-margin input{
+    margin-top: 0.5%;
+}
+
+.registratio-button{
+    margin-left: 60%;
+    width: 40%;
+}
+
+.info-card{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.info-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 30%;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex h5{
+    margin-left: 10%;
+}
+
+.intro-text{
+    text-align: center;
+    font-size: 2rem;
+}
